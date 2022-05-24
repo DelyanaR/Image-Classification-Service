@@ -1,0 +1,26 @@
+<div>
+  <nav>
+    <a routerLink="/" routerLinkActive="" class="Home"><p>Home</p></a>
+    <a routerLink="/gallery" routerLinkActive="active" class="Gallery"><p>Gallery</p></a>
+  </nav>
+</div>
+<div>
+  <form [formGroup]="tagFormGroup" (ngSubmit)="getImagesByTagName()">
+    <input id="idId" (change)="getImagesByTagName()" type="text" [formControlName]="'name'"
+           placeholder="Write a tag name here..." class="inputTag">
+    <button type="submit" class="button">Search by tag name</button>
+  </form>
+</div>
+
+<div class="gallery">
+  <div class="tags" *ngFor="let image of images">
+    <div class="image">
+      <img src={{image.url}} (click)="openPopUp(image)" class="image">
+      <br>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="load"> <app-image-item [image]="openedImage" (popup)="closePopUp()">  </app-image-item>
+</div>
+

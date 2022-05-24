@@ -1,0 +1,71 @@
+html{
+  background-color: #0095cc;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  width:100px;
+  height:50px;
+  text-align: center;
+}
+
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: orangered;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: orangered;
+}
+
+.button{
+  border:2px black;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 20px;
+  cursor:pointer;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  width:150px;
+  height:75px;
+}
+
+button:hover {
+  color: orangered;
+  background-color: #CFD8DC;
+}
+
+.Home{
+  margin-right: 10px;
+}
+
+div h1{
+  color: #cc3700;
+  border: 2px;
+  border-radius: 4px;
+  margin-left:35%;
+  margin-right: 35%;
+}
+
+.input{
+  width:40%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.error{
+  margin-top: 10px;
+}
+
+.text{
+  margin-top:10%;
+  text-align: center;
+}
