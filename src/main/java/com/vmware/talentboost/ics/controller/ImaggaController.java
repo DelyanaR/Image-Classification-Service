@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class ImaggaController {
-    private final String credentialsToEncode = "acc_eb9495636001a90" + ":" + "2c935dcbada672a6931eb05f219632cc";
+    private final String credentialsToEncode = "api-key-to-be-inserted-here" + ":" + "api-secret-to-be-inserted-here";
     private final String basicAuth;
     private final String endpoint_url = "https://api.imagga.com/v2/tags";
 
